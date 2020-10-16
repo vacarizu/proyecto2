@@ -7,7 +7,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
     image = models.ImageField(
-            upload_to='uploads/% Y/% m/% d/', height_field=None, width_field=None, max_length=100)
+            upload_to='uploads/', height_field=None, width_field=None, max_length=100)
     created_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(
